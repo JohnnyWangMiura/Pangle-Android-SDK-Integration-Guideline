@@ -143,7 +143,7 @@ mTTAdNative.loadBannerExpressAd(adSlot, new TTAdNative.NativeExpressAdListener()
             @Override
             public void onSelected(int position, String value) {
                 //Remove Banner Ads
-                mExpressContainer.removeAllViews();
+                mExampleContainer.removeAllViews();
             }
 
             @Override
