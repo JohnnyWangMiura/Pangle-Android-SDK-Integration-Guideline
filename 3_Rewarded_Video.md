@@ -147,9 +147,9 @@ if (ttRewardVideoAd != null) {
 ```
 
 ### Preload a Rewarded Ad
-`TTRewardVideoAd` is a one-time-use object. This means that once a rewarded ad is shown, the object can't be used to load another ad. To request another rewarded ad, you'll need to create a new `TTRewardVideoAd` object.
 
 A best practice is to load another rewarded video ad in the `onAdClose()` method on `RewardAdInteractionListener` so that the next rewarded video ad starts loading as soon as the previous one is closed:
+
 ```Java
 @Override
 public void onAdClose() {
