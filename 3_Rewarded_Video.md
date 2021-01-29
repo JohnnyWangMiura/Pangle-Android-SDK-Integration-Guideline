@@ -64,7 +64,7 @@ mTTAdNative.loadRewardVideoAd(adSlot, new TTAdNative.RewardVideoAdListener() {
     }
 
     @Override
-    public void onRewardVideoAdLoad(TTRewardVideoAd ad) {
+    public void onRewardVideoAdLoad(TTRewardVideoAd ttRewardVideoAd) {
        
     }
 });
