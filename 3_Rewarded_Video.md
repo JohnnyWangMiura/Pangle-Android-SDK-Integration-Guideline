@@ -26,12 +26,12 @@ Rewarded video is a full-screen video ad. Users can get rewards after watching t
 ## Rewarded Video Implementation
 The main steps to integrate rewarded video ads are:
 
-- Load an ad.
+- Load an Rewarded ad.
 - Register ad event callbacks.
 - Display the ad.
-- Preload the next ad.
+- Preload a Rewarded Ad.
 
-### Load an ad
+### Load an Rewarded Ad
 Loading an ad is accomplished using the `loadRewardVideoAd()` method on the `TTAdNative` class. The `loadRewardVideoAd()` method requires a `AdSlot` Object and a `RewardVideoAdListener` to be notified when ad loading succeeds or fails. The loaded `TTRewardVideoAd` object is provided as a parameter in the `onRewardVideoAdLoad(TTRewardVideoAd ad)` callback.
 
 #### Create the TTAdNative Object
@@ -49,7 +49,7 @@ AdSlot adSlot = new AdSlot.Builder()
         .build();
 ```
 
-#### Load a Rewarded Video and Register RewardVideoAdListener callback
+#### Load a Rewarded Video and Register RewardVideoAdListener Callback
 Calling the `loadRewardVideoAd()` method on the `TTAdNative` class to load a Rewarded Video Ad.
 ```Java
 mTTAdNative.loadRewardVideoAd(adSlot, new TTAdNative.RewardVideoAdListener() {
@@ -133,20 +133,20 @@ ttRewardVideoAd.setRewardAdInteractionListener(new TTRewardVideoAd.RewardAdInter
 
 
 
-### Display the ad
+### Display the Ad
 Before displaying a rewarded video ad to users, you must present the user with an choice to view rewarded ad in exchange for a reward. Rewarded ads must always be an opt-in experience.
 
 To show a rewarded video ad, we recommend to use the `onRewardVideoCached()` method to verify if it's finished loading, then call `showRewardVideoAd()` on `TTRewardVideoAd`. The `showRewardVideoAd()` method requires `Activity` instance. The Activity instance should be the activity from which the rewarded ad is presented.
 
 ```Java
-if (mttRewardVideoAd != null) {
+if (ttRewardVideoAd != null) {
 
-   mttRewardVideoAd.showRewardVideoAd(RewardVideoActivity.this);
+   ttRewardVideoAd.showRewardVideoAd(RewardVideoActivity.this);
        
  }
 ```
 
-### Preload a Rewarded Video Ad
+### Preload a Rewarded Ad
 `TTRewardVideoAd` is a one-time-use object. This means that once a rewarded ad is shown, the object can't be used to load another ad. To request another rewarded ad, you'll need to create a new `TTRewardVideoAd` object.
 
 A best practice is to load another rewarded video ad in the `onAdClose()` method on `RewardAdInteractionListener` so that the next rewarded video ad starts loading as soon as the previous one is closed:
@@ -159,7 +159,7 @@ public void onAdClose() {
 
 
 
-## Server Reward Verification Callback
+## Server-Side Reward Verification Callback
 **Note：**
 The Server-side verification is not necessary. Server-side verification acts as an additional layer of validation for rewarded ad views in your app. It’s performed in addition to the standard client-side callback. You can use server-side verification to validate each completed rewarded video ad view and ensure you're only rewarding users who have actually finished watching the video in your app.
 
