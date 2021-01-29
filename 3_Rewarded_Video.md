@@ -126,7 +126,7 @@ ttRewardVideoAd.setRewardAdInteractionListener(new TTRewardVideoAd.RewardAdInter
 | onAdVideoBarClick   | This method is invoked when the rewarded ad is clicked by the user.                                      |
 | onAdClose           | This method is invoked when the rewarded ad is closed due to the user tapping on the close icon on the endcard.               |
 | onVideoComplete     | This method is invoked when the video has finished playing.                                    |
-| onVideoError        | This method is invoked when an ad fails to display. It includes an Error parameter that indicates what type of failure occurred.   |
+| onVideoError        | This method is invoked when an ad fails to display.                                            |
 | onRewardVerify      | The method is invoked when the user should be rewarded.  Parameter: `rewardVerify`: sdk will return true if the user meet the our requirements, for example, the video has finished playing. `rewardName`: The name of reward item you entered on Pangle platform. `rewardAmout`: The number of reward items you entered on Pangle platform.                         |
 | onSkippedVideo      | The method is invoked when the user skipped the video.                                    |
 | onAdShow            | This method is invoked when the ad is displayed, covering the device's screen.                                      |
