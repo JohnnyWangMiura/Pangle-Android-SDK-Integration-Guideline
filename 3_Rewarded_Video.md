@@ -70,7 +70,7 @@ mTTAdNative.loadRewardVideoAd(adSlot, new TTAdNative.RewardVideoAdListener() {
 });
 ```
 
-| RewardVideoAdListener callback | - |
+| RewardVideoAdListener callback | Description |
 |---------------------|------------------------------------------------------------|
 | onError             | This method is invoked when an ad fails to load. It includes an error parameter of type Error that indicates what type of failure occurred. For more information, refer to the ErrorCode section                                                 |
 | onRewardVideoCached | This method is executed when the video file has finished loading               |
@@ -121,7 +121,7 @@ ttRewardVideoAd.setRewardAdInteractionListener(new TTRewardVideoAd.RewardAdInter
 ```
 
 #### RewardAdInteractionListener Callback Instruction
-| RewardAdInteractionListener callback | - |
+| RewardAdInteractionListener callback | Description |
 |---------------------|------------------------------------------------------------|
 | onAdVideoBarClick   | This method is invoked when the rewarded ad is clicked by the user.                                      |
 | onAdClose           | This method is invoked when the rewarded ad is closed due to the user tapping on the close icon on the endcard.               |
