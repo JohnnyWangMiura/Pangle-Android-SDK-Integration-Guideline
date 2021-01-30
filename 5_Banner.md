@@ -67,7 +67,7 @@ mTTAdNative.loadBannerExpressAd(adSlot, new TTAdNative.NativeExpressAdListener()
 });
 ```
 
-| NativeExpressAdListener callback | - |
+| NativeExpressAdListener callback | Description |
 |---------------------|------------------------------------------------------------|
 | onError             | This method is invoked when an ad fails to load. It includes an error parameter of type Error that indicates what type of failure occurred. For more information, refer to the ErrorCode section                                                 |
 | onNativeExpressAdLoad | This method is executed when an ad material is loaded successfully.        |
@@ -115,7 +115,7 @@ mTTAdNative.loadBannerExpressAd(adSlot, new TTAdNative.NativeExpressAdListener()
 ```
 
 #### ExpressAdInteractionListener Callback Instruction
-| ExpressAdInteractionListener callback | - |
+| ExpressAdInteractionListener callback | Description |
 |---------------------|------------------------------------------------------------|
 | onAdClicked         | This method is invoked when the ad is clicked by the user.                                  |
 | onAdShow            | This method is invoked when the ad is displayed, covering the device's screen.              |
