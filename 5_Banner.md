@@ -1,7 +1,9 @@
 # Banner Ads
 
 ## Introducation
-Banner ads occupy a spot within an app's layout, either at the top or bottom of the device screen. At the moment, Pangle only supports 300x250 and 320x50 for the traffic outside of Chinese Mainland.
+Banner ads occupy a spot within an app's layout, either at the top or bottom of the device screen. 
+
+**Note: Pangle only supports 300x250 and 320x50 for the traffic outside of Chinese Mainland at this time.**
 
 ## Precondition
 Create an app and banner ad placement on Pangle platform
