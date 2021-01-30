@@ -3,7 +3,7 @@
 ## Introducation
 Native ads allow you to customize the look and feel of the ads that appear in your app. You design the ads: how they look, where they’re placed, and how they work within your existing app design. This differs from other ad formats, which don't allow you to customize the appearance of the ad.
 
-**Note: Pangle supports 4 forms outside of China: Large Image with 1.91:1 ratio、1280*720 video、square image, square video. **
+**Note: Pangle supports 4 forms outside the chinese mainland: Large Image with 1.91:1 ratio、1280*720 video、square image, square video.**
 
 
 ## Precondition
@@ -153,7 +153,7 @@ Once the native ad is loaded, the app is responsible for displaying ad assets. P
 
 #### Populate the Asset Views
 
-**Note:Publishers need to inflate the native ad layout before starting this part, refer to the section one**
+**Note:Publishers need to inflate the native ad layout before starting this part, refer to the inflate native ad layout**
 
 Here is an example that retrieves ad assets and populates the asset views. SDK always return image url for all image assets, publishers need to download the image from the url. In the example, it uses a third-party framework(Glide) to finish the thing.
 
@@ -163,7 +163,7 @@ private void PopulateNativeAdView(Context mContext, TTFeedAd ad){
     //set title
     mTitle.setText(ad.getTitle()); 
     
-    //description
+    //set description
     mDescription.setText(ad.getDescription()); 
     
     //set ad source
@@ -346,7 +346,6 @@ ad.setVideoAdListener(new TTFeedAd.VideoAdListener() {
 
 Pangle provides a dislike button for banner ad which could make the user have a chance to remove the banner layout and select the reason why they don't like it. This step is optional.
 
-The `setDislikeCallback` method requires `Acitivty` and `DislikeInteractionCallback` instances. The `Activity` instance should be the activity from which the banner ad is presented.
 
 ```Java
             
@@ -383,7 +382,11 @@ The `setDislikeCallback` method requires `Acitivty` and `DislikeInteractionCallb
 
 ```
 
+## Test with test ads
 
+Now you have finished the integration. If you wanna test your apps, make sure you use test ads rather than live, production ads. The easiest way to load test ads is to use test mode. It's been specially configured to return test ads for every request, and you're free to use it in your own apps while coding, testing, and debugging. 
+
+Refer to the link(https://www.pangleglobal.com/help/doc/5fba365f7b550100157bfc06) to add your device to the test devices on Pangle platform.
 
 
 
