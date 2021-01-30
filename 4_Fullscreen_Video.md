@@ -69,7 +69,7 @@ mTTAdNative.loadFullScreenVideoAd(adSlot, new TTAdNative.FullScreenVideoAdListen
 );
 ```
 
-| FullScreenVideoAdListener callback | - |
+| FullScreenVideoAdListener callback | Description |
 |---------------------|------------------------------------------------------------|
 | onError             | This method is invoked when an ad fails to load. It includes an error parameter of type Error that indicates what type of failure occurred. For more information, refer to the ErrorCode section                                                 |
 | onFullScreenVideoCached | This method is executed when the video file has finished loading.               |
@@ -116,7 +116,7 @@ ttFullScreenVideoAd.setFullScreenVideoAdInteractionListener(new TTFullScreenVide
 ```
 
 #### FullScreenVideoAdInteractionListener Callback Instruction
-| FullScreenVideoAdInteractionListener callback | - |
+| FullScreenVideoAdInteractionListener callback | Description |
 |---------------------|------------------------------------------------------------|
 | onAdVideoBarClick   | This method is invoked when the ad is clicked by the user.                                      |
 | onAdClose           | This method is invoked when the ad is closed due to the user tapping on the close icon on the endcard.               |
