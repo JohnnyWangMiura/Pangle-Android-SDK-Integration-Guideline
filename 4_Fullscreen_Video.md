@@ -14,7 +14,7 @@ Create an app and fullscreen video ad placement on Pangle platform
     
       - Reference：[How do I create an ad placement?](https://www.pangleglobal.com/jp/help/doc/5e62079cfe8738000fd184cf)
     
-**Note: 'Fullscreen Video Ads' mentioned here is named as 'Interstitial Video Ads' on Pangle's platform. **
+**Note: 'Fullscreen Video Ads' mentioned here is named as 'Interstitial Video Ads' on Pangle's platform.**
 
 ### Parameter Setting：
 - `Orienation`: Select the orientation of the video.
