@@ -194,7 +194,7 @@ private void PopulateNativeAdView(Context mContext, TTFeedAd ad){
         mAdLogoView.addView(logoImageView, lp);
     }
     
-    //check the forms of the ad, 
+    //check ad form, set video view
     if (ad.getImageMode() == TTAdConstant.IMAGE_MODE_VIDEO || ad.getImageMode() == TTAdConstant.IMAGE_MODE_VIDEO_SQUARE){
         
         if (videoView != null) {
@@ -211,7 +211,7 @@ private void PopulateNativeAdView(Context mContext, TTFeedAd ad){
         } 
     }
     
-    //check the forms of the ad
+    //check ad form, set image view
     if (ad.getImageMode() == TTAdConstant.IMAGE_MODE_LARGE_IMG || ad.getImageMode() == TTAdConstant.IMAGE_MODE_SQUARE_IMG){
         
         if (ad.getImageList() != null && !ad.getImageList().isEmpty()) {
@@ -234,7 +234,7 @@ private void PopulateNativeAdView(Context mContext, TTFeedAd ad){
 **Note: You must display the ad logo to denote that the view is an advertisement.**
 
 
-Publishers could check the form of the ad with the `getImageMode()` method.
+Publishers could check ad forms with the `getImageMode()` method. Example as below:
 
 ```Java
     if(ad.getImageMode() == TTAdConstant.IMAGE_MODE_LARGE_IMG){
