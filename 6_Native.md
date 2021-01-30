@@ -231,7 +231,7 @@ private void PopulateNativeAdView(Context mContext, TTFeedAd ad){
 
 ```
 
-**Note: You must display the ad logo to denote that the view is an advertisement.
+**Note: You must display the ad logo to denote that the view is an advertisement.**
 
 
 Publishers could check the form of the ad with the `getImageMode()` method.
@@ -244,10 +244,10 @@ Publishers could check the form of the ad with the `getImageMode()` method.
 
 | IMAGE_MODE | Description  |
 |-----------------------------|------------------------------------------------------------|
-| IMAGE_MODE_VIDEO            | This method is invoked when the ad is clicked by the user.                                  |
-| IMAGE_MODE_VIDEO_SQUARE     | This method is invoked when the ad is displayed, covering the device's screen.              |
-| IMAGE_MODE_LARGE_IMG        | This method is invoked when the ad is rendered failed.                                      |
-| IMAGE_MODE_SQUARE_IMG       | This method is invoked when the ad is rendered successfully                                 |
+| IMAGE_MODE_VIDEO            |  1280*720 video                                 |
+| IMAGE_MODE_VIDEO_SQUARE     |  1:1 square video               |
+| IMAGE_MODE_LARGE_IMG        |  1200*628 image (1.91:1)                                     |
+| IMAGE_MODE_SQUARE_IMG       |  1:1 square image                                |
 
 
 
@@ -386,7 +386,7 @@ Pangle provides a dislike button for banner ad which could make the user have a 
 
 Now you have finished the integration. If you wanna test your apps, make sure you use test ads rather than live, production ads. The easiest way to load test ads is to use test mode. It's been specially configured to return test ads for every request, and you're free to use it in your own apps while coding, testing, and debugging. 
 
-Refer to the link(https://www.pangleglobal.com/help/doc/5fba365f7b550100157bfc06) to add your device to the test devices on Pangle platform.
+Refer to the [How to add a test device?](https://www.pangleglobal.com/help/doc/5fba365f7b550100157bfc06) to add your device to the test devices on Pangle platform.
 
 
 
