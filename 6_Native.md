@@ -19,7 +19,7 @@ Create an app and native ad placement on Pangle platform
 
 Native ads are ad assets that are presented to users via UI components. It can be formatted to match your app's visual design. When a native ad loads, your app receives an ad object that contains its assets, and the app is then responsible for displaying them. 
 
-Broadly speaking, there are three steps to successfully implementing Native Ads: 
+Broadly speaking, there are three steps to successfully implement Native Ads: 
 
 - Design your native ad layout.
 - Loading an ad.
