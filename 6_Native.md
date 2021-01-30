@@ -3,7 +3,7 @@
 ## Introducation
 Native ads allow you to customize the look and feel of the ads that appear in your app. You design the ads: how they look, where they’re placed, and how they work within your existing app design. This differs from other ad formats, which don't allow you to customize the appearance of the ad.
 
-**Note: Pangle supports 4 forms outside the chinese mainland: Large Image with 1.91:1 ratio、1280*720 video、square image, square video.**
+**Note: Pangle supports 4 forms outside the chinese mainland: Large image with 1.91:1 ratio、1280*720 video、square image, square video.**
 
 
 ## Precondition
