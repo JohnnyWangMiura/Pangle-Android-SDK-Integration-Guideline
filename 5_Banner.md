@@ -201,5 +201,14 @@ If `onRenderSuccess` method is executed, calling `addView()` to add banner view 
 ```
 
 
+## Test with test ads
+
+Now you have finished the integration. If you wanna test your apps, make sure you use test ads rather than live, production ads. The easiest way to load test ads is to use test mode. It's been specially configured to return test ads for every request, and you're free to use it in your own apps while coding, testing, and debugging. 
+
+Refer to the [How to add a test device?](https://www.pangleglobal.com/help/doc/5fba365f7b550100157bfc06) to add your device to the test devices on Pangle platform.
+
+
+
+
 
 
