@@ -4,7 +4,7 @@
 - minSdkVersion 14 and higher
 - gradleVersion required
 
-<img scr="">
+<img scr="https://github.com/JohnnyWangMiura/Pangle-Android-SDK-Integration-Guideline/blob/main/gradle.png">
 
 ## Import Pangle SDK
 
