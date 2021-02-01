@@ -16,7 +16,7 @@ Rewarded video is a full-screen video ad. Users can get rewards after watching t
   - Create an ad placement：[Application] -> [Ad Placements] -> [Add Ad Placement] -> [Rewarded Video Ads]
     - Reference：[How do I create an ad placement?](https://www.pangleglobal.com/jp/help/doc/5e62079cfe8738000fd184cf)
     
-### Parameter Setting：
+### Pangle Platform Parameter Setting：
 - `Orienation`: Select the orientation of the video.
 - `Reward amount`: Enter the number of reward items the user will receive. Must be a whole number.
 - `Reward item`: Enter the name of reward item the user will receive. Examples: Coins, extra lives
@@ -45,7 +45,6 @@ In this section, you need to pass ad placement id in the method `setCodeId()`.
 ```Java
 AdSlot adSlot = new AdSlot.Builder()
         .setCodeId("Your_Ad_Placement_Id")
-        .setOrientation(orientation) //Expected Orientation：TTAdConstant.HORIZONTAL or TTAdConstant.VERTICAL
         .build();
 ```
 
