@@ -140,7 +140,7 @@ mTTAdNative.loadFeedAd(adSlot, new TTAdNative.FeedAdListener() {
 });
 ```
 
-| FeedAdListener callback | - |
+| FeedAdListener callback | Description |
 |---------------------|------------------------------------------------------------|
 | onError             | This method is invoked when an ad fails to load. It includes an error parameter of type Error that indicates what type of failure occurred. For more information, refer to the ErrorCode section.                                                 |
 | onFeedAdLoad        | This method is executed when an ad material is successfully loaded.        |
