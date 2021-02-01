@@ -16,7 +16,7 @@ Create an app and fullscreen video ad placement on Pangle platform
     
 **Note: 'Fullscreen Video Ads' mentioned here is named as 'Interstitial Video Ads' on Pangle's platform.**
 
-### Parameter Setting：
+### Pangle Platform Parameter Setting：
 - `Orienation`: Select the orientation of the video.
     
     
@@ -44,7 +44,6 @@ In this section, you need to pass ad placement id in the method `setCodeId()`.
 ```Java
 AdSlot adSlot = new AdSlot.Builder()
         .setCodeId("Your_Ad_Placement_Id")
-        .setOrientation(orientation) //Expected Orientation：TTAdConstant.HORIZONTAL or TTAdConstant.VERTICAL
         .build();
 ```
 
