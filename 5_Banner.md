@@ -51,7 +51,7 @@ AdSlot adSlot = new AdSlot.Builder()
 #### Load a Banner Ad and Register NativeExpressAdListener Callback
 Calling the `loadBannerExpressAd()` method on the `TTAdNative` class to load a Banner Ad. The `AdSlot` and `NativeExpressAdListener` Object are required. The Banner Object is returned as a parameter in the `onNativeExpressAdLoad` callback.
 
-**Note: The Banner class is named as `TTNativeExpressAd` **
+**Note: The Banner class is named as `TTNativeExpressAd`**
 
 ```Java
 mTTAdNative.loadBannerExpressAd(adSlot, new TTAdNative.NativeExpressAdListener() {
