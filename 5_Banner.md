@@ -122,7 +122,7 @@ mTTAdNative.loadBannerExpressAd(adSlot, new TTAdNative.NativeExpressAdListener()
 | onRenderFail        | This method is invoked when the ad is rendered failed.                                      |
 | onRenderSuccess     | This method is invoked when the ad is rendered successfully                                 |
 
-**Warning: the Banner Ad only could be shown once the onRenderSuccess method is invoked.**
+**Warning: the Banner Ad could be shown after the onRenderSuccess method is invoked.**
 
 
 ### Handle Dislike Button(optional)
