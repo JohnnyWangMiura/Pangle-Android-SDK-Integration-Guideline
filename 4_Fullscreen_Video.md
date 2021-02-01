@@ -3,6 +3,8 @@
 ## Introducation
 Fullscreen Video ads, also known as the Interstitial Video Ads, are full-screen video ads with 15-30 seconds long that cover the interface of an app until closed by the user. It can be skipped after 5 seconds. They're typically displayed at natural transition points in the flow of an app, such as between activities or during the pause between levels in a game. When an app shows an interstitial ad, the user has the choice to either tap on the ad and continue to its destination or close it and return to the app.
 
+**Note: 'Fullscreen Video Ads' mentioned here is named as 'Interstitial Video Ads' on Pangle's platform.**
+
 ## Precondition
 Create an app and fullscreen video ad placement on Pangle platform
 
@@ -14,7 +16,6 @@ Create an app and fullscreen video ad placement on Pangle platform
     
       - Reference：[How do I create an ad placement?](https://www.pangleglobal.com/jp/help/doc/5e62079cfe8738000fd184cf)
     
-**Note: 'Fullscreen Video Ads' mentioned here is named as 'Interstitial Video Ads' on Pangle's platform.**
 
 ### Pangle Platform Parameter Setting：
 - `Orienation`: Select the orientation of the video.
