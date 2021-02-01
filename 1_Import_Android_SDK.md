@@ -2,9 +2,11 @@
 
 ## Environment requirement
 - minSdkVersion 14 and higher
-- gradleVersion required
+- targetSDKVersion 28 and higher
+- compileSdkVersion 29 and higher
+- gradleVersion required as below
 
-<img scr="https://github.com/JohnnyWangMiura/Pangle-Android-SDK-Integration-Guideline/blob/main/gradle.png">
+<img src="https://github.com/JohnnyWangMiura/Pangle-Android-SDK-Integration-Guideline/blob/main/gradle.png" />
 
 ## Import Pangle SDK
 
