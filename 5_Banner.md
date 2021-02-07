@@ -61,7 +61,7 @@ mTTAdNative.loadBannerExpressAd(adSlot, new TTAdNative.NativeExpressAdListener()
       }
 
       @Override
-      public void onNativeExpressAdLoad(List<TTNativeExpressAd> BannerAds) {
+      public void onNativeExpressAdLoad(List<TTNativeExpressAd> bannerAds) {
                
       }
 });
@@ -85,26 +85,30 @@ mTTAdNative.loadBannerExpressAd(adSlot, new TTAdNative.NativeExpressAdListener()
       }
 
       @Override
-      public void onNativeExpressAdLoad(List<TTNativeExpressAd> BannerAds) {
+      public void onNativeExpressAdLoad(List<TTNativeExpressAd> bannerAds) {
+      
+          if (bannerAds == null || bannerAds.size() == 0){
+               return;
+          }
           
-          BannerAds.setExpressInteractionListener(new TTNativeExpressAd.ExpressAdInteractionListener() {
+          bannerAds.get(0).setExpressInteractionListener(new TTNativeExpressAd.ExpressAdInteractionListener() {
             @Override
-            public void onAdClicked(View BannerView, int type) {
+            public void onAdClicked(View bannerView, int type) {
        
             }
 
             @Override
-            public void onAdShow(View BannerView, int type) {
+            public void onAdShow(View bannerView, int type) {
        
             }
 
             @Override
-            public void onRenderFail(View BannerView, String msg, int code) {
+            public void onRenderFail(View bannerView, String msg, int code) {
 
             }
 
             @Override
-            public void onRenderSuccess(View BannerView, float width, float height) {
+            public void onRenderSuccess(View bannerView, float width, float height) {
        
             }
         });
@@ -139,9 +143,13 @@ mTTAdNative.loadBannerExpressAd(adSlot, new TTAdNative.NativeExpressAdListener()
       }
 
       @Override
-      public void onNativeExpressAdLoad(List<TTNativeExpressAd> BannerAds) {
+      public void onNativeExpressAdLoad(List<TTNativeExpressAd> bannerAds) {
+      
+          if (bannerAds == null || bannerAds.size() == 0){
+             return;
+          }
           
-          BannerAds.setDislikeCallback(BannerExpressActivity.this, new TTAdDislike.DislikeInteractionCallback() {
+          bannerAds.get(0).setDislikeCallback(BannerExpressActivity.this, new TTAdDislike.DislikeInteractionCallback() {
             @Override
             public void onSelected(int position, String value) {
                 //Remove Banner Ads
@@ -179,9 +187,12 @@ mTTAdNative.loadBannerExpressAd(adSlot, new TTAdNative.NativeExpressAdListener()
       }
 
       @Override
-      public void onNativeExpressAdLoad(List<TTNativeExpressAd> BannerAds) {
-               
-          BannerAds.render();
+      public void onNativeExpressAdLoad(List<TTNativeExpressAd> bannerAds) {
+      
+          if (bannerAds == null || bannerAds.size() == 0){
+            return;
+          }     
+          bannerAds.get(0).render();
                
       }     
 
@@ -194,8 +205,9 @@ If `onRenderSuccess` method is executed, calling `addView()` to add banner view 
 
 ```Java
   @Override
-  public void onRenderSuccess(View BannerView, float width, float height) {
-       mExampleContainer.addView(BannerView);
+  public void onRenderSuccess(View bannerView, float width, float height) {
+       mExampleContainer.removeAllViews();
+       mExampleContainer.addView(bannerView);
   }
 
 ```
