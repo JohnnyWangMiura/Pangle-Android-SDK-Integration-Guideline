@@ -55,6 +55,11 @@ Pangle SDK also could be initialized asynchronously since the v3.5.0.0 SDK, need
     }
 ```
 
+Publisher also could check the initialization status with the method `isInitSuccess()`
+```Java
+    TTAdSdk.isInitSuccess();
+```
+
 
 
 **Warning: Ads may be preloaded by the Pangle Ads SDK or mediation partner SDKs after initial. If you need to obtain consent from users in the European Economic Area (EEA) or users under age, please ensure you do so before initializing the Pangle Ads SDK.**
