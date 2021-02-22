@@ -4,7 +4,7 @@ You must initialize Pangle SDK before loading Pangle ads. This needs to be done 
 
 
 
-Initialize Pangle SDK synchronously, need to pass `Context`, `TTAdConfig` in the method `TTAdSdk.init()`. For example, in `Application #onCreate`.
+Initialize Pangle SDK synchronously, need to pass `Context`, `TTAdConfig` in the method `TTAdSdk.init()`. 
 
 **Note: SDK Initialization method should be called on the main thread**
 
@@ -25,7 +25,7 @@ public class DemoApplication extends Application {
 }
 ```
 
-Initialize Pangle SDK asynchronously is supported since the v3.5.0.0 SDK, need to pass `Context`, `TTAdConfig` and `InitCallback` instance in the method `TTAdSdk.init()`. `InitCallback` is used to get the notification. Then publishers **must** make sure the sdk is initialized successfully before trying to load Pangle Ads.
+Initialize Pangle SDK asynchronously is supported since the v3.5.0.0 SDK, need to pass `Context`, `TTAdConfig` and `InitCallback` instance in the method `TTAdSdk.init()`. `InitCallback` is used to get the notification. Then publishers **must** make sure the sdk is initialized successfully before loading Pangle Ads.
 
 **Note: SDK Initialization method should be called on the main thread**
 
