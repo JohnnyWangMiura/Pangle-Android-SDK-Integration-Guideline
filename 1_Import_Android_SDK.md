@@ -58,6 +58,7 @@ android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"   android:au
 ## Obfuscation
 If you need to use proguard to obfuscate your code, be sure not to obfuscate the SDK code. Please add the following configuration at the end of the proguard.cfg file (or other obfuscated files):
 ```XML
--keep class com.bytedance.sdk.openadsdk.** { *; }
+-keep class com.bytedance.sdk.** { *; }
+-keep class com.pgl.** { *; }
 ```
 
