@@ -10,7 +10,7 @@
 
 ## Import Pangle SDK
 
-**Note: JFrog has announced that they are shutting down the Bintray hosting service, which includes the popular JCenter hosting service for Java artifacts, the Pangle Android repository has been mrigrated to Maven **
+**Note: JFrog has announced that they are shutting down the Bintray hosting service, which includes the popular JCenter hosting service for Java artifacts, the Pangle Android repository has been mrigrated to Maven**
 
 Apps can import the Pangle SDK with a Gradle dependency. First, make sure that `Maven` is referenced in the `allprojects` section of your project-level `build.gradle` file with the url 'https://artifact.bytedance.com/repository/pangle'.
 
