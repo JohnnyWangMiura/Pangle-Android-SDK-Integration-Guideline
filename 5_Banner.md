@@ -39,12 +39,12 @@ TTAdNative mTTAdNative = TTAdSdk.getAdManager().createAdNative(this);
 ```
 
 #### Create the AdSlot Object
-When building the `AdSlot` Object, the ad placement id and size of the banner are required.
+When building the `AdSlot` Object, the ad placement id and size of the banner are required. Size should be passed in 'dp' for android.
 
 ```Java
 AdSlot adSlot = new AdSlot.Builder()
         .setCodeId("your ad placement id") 
-        .setExpressViewAcceptedSize("Width", "Height") 
+        .setExpressViewAcceptedSize("Width", "Height") //size should be passed in dp
         .build();
 ```
 
